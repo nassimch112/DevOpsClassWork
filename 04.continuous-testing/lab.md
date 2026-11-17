@@ -20,12 +20,12 @@ Installation instructions:
 
 After installation, start Redis server:
 
-- **Windows:** double click on `redis-server.exe` file (keep it open)
+- **Windows:** double-click on `redis-server.exe` file (keep it open)
 - **MacOS and Linux:** `redis-server`
 
 Test if the Redis server is running:
 
-- **Windows:** double click on `redis-cli.exe` and run the `ping` command inside the REPL
+- **Windows:** double-click on `redis-cli.exe` and run the `ping` command inside the REPL
 - **MacOS and Linux:** run in a new terminal window `redis-cli ping` (should answer with "PONG")
 
 2. Install an **IDE or a text editor**, for example, [Atom](https://atom.io/) or [VS Code](https://code.visualstudio.com/)
@@ -68,7 +68,7 @@ Create a REST API GET `user` method that retrieves user information from the dat
 1) Create `get` user controller:   
   - Create **2 unit tests** (in the file `lab/test/user.controller.js`):
     - get a user by username
-    - cannot get a user when it does not exist
+    - Cannot get a user when it does not exist
   - Create **the controller method** (in the file `lab/src/controllers/user.js`)
 
 2) Create GET user REST API method:   
@@ -77,6 +77,19 @@ Create a REST API GET `user` method that retrieves user information from the dat
     - cannot get a user when it does not exist
   - Create **GET user route** (in the file `lab/src/routes/user.js`)
 
-## Bonus tasks
+## 3. Integrate a Swagger UI
 
-1. Integrate Swagger UI using for example this package - https://www.npmjs.com/package/express-swagger-generator
+1. Integrate Swagger UI using for example this package - https://www.npmjs.com/package/express-swagger-generator.
+2. Write tests to ensure the UI is functioning properly.
+
+## Additional testing
+
+Complete one or both of the items below.
+
+1. Choose one preexisting project that you have created or worked on and enhance it with a testing suite. 
+2. Create a functions library for your main programming language. Review projects you have worked on for repeated or commonly used custom functions and create a library of custom functions that can be used in future projects. Make sure the functions are well covered with tests. 
+
+## Bonus:
+
+1. Complete the python testing lab.
+2. Begin [Test Driven Development](https://www.obeythetestinggoat.com/pages/book.html#toc)
