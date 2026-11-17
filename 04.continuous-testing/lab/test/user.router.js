@@ -104,4 +104,18 @@ describe('User REST API', () => {
         })
     })
   })
+
+  describe('Swagger UI', () => {
+    it('should serve swagger documentation UI', (done) => {
+      chai.request(app)
+        .get('/api-docs/')
+        .then((res) => {
+          chai.expect(res).to.have.status(200)
+          done()
+        })
+        .catch((err) => {
+          throw err
+        })
+    })
+  })
 })
