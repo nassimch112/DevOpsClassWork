@@ -1,0 +1,1 @@
+"""Prime-number exercise package."""
