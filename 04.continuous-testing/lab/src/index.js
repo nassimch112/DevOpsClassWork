@@ -13,7 +13,7 @@ let options = {
         info: {
             title: 'User API',
             version: '1.0.0',
-            description: 'API documentation for User management',
+            description: 'The API documentation for User management',
         },
         host: `localhost:${port}`,
         basePath: '/',
