@@ -106,6 +106,23 @@ pip3 install <PACKAGE_NAME>
 
 - [Continuous integration vs. continuous delivery vs. continuous deployment](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)
 
+## Lab implementation
+
+The repository includes a GitHub Actions workflow at
+`.github/workflows/node-ci.yml`. It runs for pushes and pull requests targeting
+`main`, starts a Redis 7 service container, installs the Node.js dependencies
+with `npm ci`, and runs the User API test suite.
+
+The workflow uses the application directory
+`04.continuous-testing/lab` as its working directory because the repository
+contains several independent course labs.
+
+The Render deployment step cannot be completed automatically from this local
+repository. It requires a Render account, selecting this GitHub repository,
+setting the service root directory to `04.continuous-testing/lab`, and
+configuring a Redis instance and its connection URL. After those settings are
+created, Render can deploy the service from the `main` branch.
+
 ---
 
 *The content of this document, including all text, images, and associated materials, is the exclusive property of Adaltas and is protected by applicable copyright laws. Unauthorized distribution, reproduction, or sharing of this content, in whole or in part, is strictly prohibited without the express written consent of the author(s). Any violation of this restriction may result in legal action and the imposition of penalties as prescribed by law.*
